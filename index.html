@@ -1,21 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body class="font-inter antialiased bg-white text-gray-900 tracking-tight">
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <script>
-        if (localStorage.getItem('sidebar-expanded') == 'true') {
-            document.querySelector('body').classList.add('sidebar-expanded');
-        } else {
-            document.querySelector('body').classList.remove('sidebar-expanded');
-        }
-    </script>   
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Cotizar Sitio Web - Sandoval G�icho</title>
+    <link rel="stylesheet" href="estilos.css">
+          <!-- Google Tag Manager -->
+          <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-PL3P8ZT');</script>
+            <!-- End Google Tag Manager -->
+          <!-- Google Tag Manager (noscript) -->
+          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PL3P8ZT"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+</head>
+
+
+
+
+<body>
+    <script src="controlador.js" type="text/javascript"></script>
+    <div class="contenedor_logotipo">
+        <img src="img/logo-sandoval-guicho.webp" >
+    </div>
+
+  
+  <div id="contenedor1" class="anclaje">
+    <div id="c1_seccion1">
+     
+        <h1 id="titulo">🧠 ¡COTIZA TU PROPIO SITIO WEB SIN DESPEINARTE!</h1>
+      <p>Especialistas en diseñar, implementar he administrar Sitios Web chulos y efectivos. 
+        ¡Respuestas más rápida que un rayo!  🙂</p>
+
+        <p>-Tiendas &nbsp - Academias&nbsp - Inmobiliarias &nbsp - Corporativas &nbsp - Etc...&nbsp</p>
+      
+
+      </div>
+
+
+
+
+    <div id="c1_seccion2">
+        
+        <p>👉 ¡Cotiza y recibe Soporte Especializado por 7 días! </p>
+        <form id="form1" method="POST" >
+            <input type="text" required autocomplete="cc-name"  id="form_nombre" name="form_nombre"  class="form_1"  placeholder="Nombre">
+          <input type="email" required autocomplete="email" id="form_correo" name="form_correo" class="form_1" placeholder="Correo Electronico">
+          <input type="tel" required autocomplete="tel" id="form_telefono" name="form_telefono" class="form_1" placeholder="Telefono/WhatsApp">
+          <select required id="form_interes" name="form_interes" class="form_1">
+            <option value="Sitio Web" selected>Sitio Web</option>
+            <option value="Tienda Online" >Tienda Online</option>
+            <option value="Academia de Cursos" >Academia de Cursos</option>
+            <option value="Sitio de Membresia" >Sitio de Membresia</option>
+            <option value="Bienes Raices" >Bienes Raices</option>
+            <option value="Landing Page" >Landing Page</option>
+            <option value="Pagina de Ventas" >Pagina de Ventas</option>
+            <option value="Proyecto Personalizadp" >Proyecto Personalizadp</option>
+          </select>
+          <select required id="form_hosting" name="form_hosting" class="form_1" >
+            <option selected value="No tengo Hosting ni Dominio" >No tengo Hosting ni Dominio</option>
+            <option  value="Si tengo Hosting y Dominio" >Si tengo Hosting y Dominio</option>
+            <option  value="No se que es">No se que es</option>
+          </select>
+          <textarea required placeholder="Describe aquí tu proyecto" id="form_mensaje" name="form_mensaje" class="form_1"></textarea>
+
+         <input type="button" id="btn_enviar" onclick="enviardatos()" value="¡ENVIAR Y CONTINUAR!".
+            class="g-recaptcha" 
+            data-sitekey="6LfKpaoiAAAAAHyq98_x8G_UygK-isKXOoTHrCPG" 
+            data-callback='onSubmit' 
+            data-action='submit' >
+
+
+         <p id="respuestaMensaje"></p>
+        </form>
+        
+
+      
+    </div>
+  </div>
+
+
+<div id="contenedor2">
+  <div id="c2_seccion1">
+    <h2>PERO, ¿POR DONDE PUEDO EMPEZAR? ✨</h2>
+    <p>Seguramente has estado investigando como puedes construir tu propio Sitio Web pero solo te has encontrado con:</p><br>
+    <ul>
+      <li>
+        ❌ ¿Cuánto cuesta un Sitio Web?
+      </li>
+      <li>
+        ❌ ¿Puedo construir un Sitio Web por mi cuenta?
+       </li>
+       <li>
+        ❌ ¿Qué necesito para construir una Sitio Web?
+       </li>
+       <li>
+        ❌ ¿Es fácil de administrar?
+       </li>
+       <li>
+        ❌ ¿Qué es un Hosting, Dominio y Certificado SSL?
+       </li>
+       <li>
+        ❌ Y más y más...
+       </li>
+    </ul>
+
+  </div>
+
+
+  <div id="c2_seccion2">
+    <img src="img/hombre-y-mujer-sonriendo.webp">
+  </div>
+
+</div>
+
+
+
+
+<div class="contenedor_cta">
+  <div class="cta_seccion1">
+    <h2>¡NO SE DIGA MÁS! 💪</h2>
+    <p>Quiero tener más prospectos, ventas y clientes a través de mi Sitio Web</p>
+
+  </div>
+
+  <div class="cta_seccion2">
+    <a href="#anclaje"><button class="boton_defecto"> Envía tu Cotización Aquí</button></a>
+
+  </div>
+
+</div>
+
+
+
+<div id="cotenedor3">
+  <div id="c3_seccion1">
+    <h2>👑 ¿UN SITIO WEB ES UNA BUENA IDEA?</h2>
+    <p>¡Si tu negocio no tiene un Sitio Web no existe!. ¿O si?</p>
+  </div>
+  <div id="c3_seccion2">
+    <section>
+      <h3>1-. 🕐 Siempre abierto</h3>
+      <p>Tu negocio se mantendrá abierto las 24 hrs, 365 días del año.</p>
+    </section>
+    <section>
+      <h3>2-. 💰 Más Clientes</h3>
+      <p>Comienza a generar prospectos y clientes de todas partes del mundo.</p>
+    </section>
+    <section>
+      <h3>3-. 👪 Fideliza a tus Clientes</h3>
+      <p>Comparte ideas, herramientas y consejos para fidelizar a tus clientes y conseguir nuevas recomendaciones.</p>
+    </section>
+    <section>
+      <h3>4-. 🏆 Genera confianza</h3>
+      <p>Hoy en día todo negocio cuanta con su propio Sitio Web y en no tener uno genera desconfianza.</p>
+    </section>
+  </div>
+</div>
+
+
+
+<div class="contenedor_cta">
+  <div class="cta_seccion1">
+    <h2>¡AHORA SI ME HAN CONVENCIDO! 👌</h2>
+    <p>Quiero que me Diseñen he Implemente mi Sitio Web</p>
+
+  </div>
+  <div class="cta_seccion2">
+    <a href=".anclaje"><button class="boton_defecto"> Envía tu Cotización Aquí</button></a>
+
+  </div>
+</div>
+
+
+<div id="contenedor4">
+
+  <div id="c4_seccion1">  
+    <h2>👑 DISFRUTA (DE POR VIDA) DE:</h2>
+    <p>Todos nuestros Sitios Web están construidos con WordPress, por lo cual tendrás acceso un sin fin de herramientas como:</p>
+  </div>
+
+  <div id="c4_seccion2">
+    <section>
+      <h3>1-. ⚒ Panel de Administración</h3>
+      <p>Sitios Webs 100% autoadministrables y sin la necesidad de saber programar.</p>
+    </section>
+    <section>
+      <h3>👩‍👧‍👧 2-. Gestión de Administradores</h3>
+      <p> Agrega, edita o elimina administradores de tu Sitio Web. Puedes agregar tantos quieras y asignarles diferentes roles.</p>
+    </section>
+    <section>
+      <h3>3-. 📰 Publica nuevo contenido</h3>
+      <p>Publica tu propio contenido como: páginas, artículos, imágenes, archivos, etc.</p>
+    </section>
+    <section>
+      <h3>4-. 📥 Actualizaciones Constantes</h3>
+      <p>Recibirás actualizaciones de Software de forma habitual, por lo cual tu Sitio Web siempre estará actualizado.</p>
+    </section>
+    <section>
+      <h3>5-. 🔐 Propietario de todo</h3>
+      <p>Eres el único propietario de tu Sitio Web. Solo tu y solo tendrás control sobre el.</p>
+    </section>
+    <section>
+      <h3>6-. 🔎 Visibilidad dentro de Internet</h3>
+      <p>Páginas Web para motores de búsquedas como Google y Yahoo!.</p>
+    </section>
+    <section>
+      <h3>7-.⚡ Sito Web de carga rápida</h3>
+      <p>Software de Cache para que carguen más rápido tu Sitio Web.</p>
+    </section>
+    <section>
+      <h3>8-.🔒 Antivirus</h3>
+      <p>Software de Antivirus que te permite mantener sano tu Sitio Web de todos los bichos que hay en Internet.</p>
+    </section>
+    <section>
+      <h3>9-. 📧 Cuentas de correo electrónico</h3>
+      <p>Cuentas de Correo Electrónico Personalizadas, como, por ejemplo: escribeme@tunegocio.com</p>
+    </section>
+    <section>
+      <h3>🎴 10-. Diseño 100% Responsivo</h3>
+      <p>Tu Sitio Web será capaz de adaptarse a cualquier pantalla, ya se una computadora, Tablet o Smartphone.  </p>
+    </section>
+    
+  </div>
+
+</div>
+
+
+
+<div class="contenedor_cta">
+  <div class="cta_seccion1">
+    <h2>¡AHORA SI ME HAN CONVENCIDO! 👌</h2>
+    <p>Quiero que me Diseñen he Implemente mi Sitio Web</p>
+
+  </div>
+  <div class="cta_seccion2">
+    <a href="#anclaje"><button class="boton_defecto"> Envía tu Cotización Aquí</button></a>
+
+  </div>
+</div>
+
+
+<div id="contenedor5">
+  <div id="c5_seccion1">
+    <img src="img/Plantillas-Landing-Page-Sandoval-Guicho-min.webp">
+  </div>
+
+  <div id="c5_seccion2">
+    <h2>💼 AMPLIA EXPERIENCIA TRABAJANDO CON:</h2>
+    <ul>
+      <li>- Inmobiliarias</li>
+      <li>- Agencias de Turismo</li>
+      <li>- Abogados</li>
+      <li>- Dentistas</li>
+      <li>- Para Servicos</li>
+      <li>- Para Productos</li>
+      <li>- y más y más</li>
+    </ul>
+  </div>
+
+
+</div>
+
+
+<div id="contenedor6">
+  <div id="c6_seccion1">
+    <h2>🤔 ¿REALMENTE PODEMOS AYUDARTE?</h2>
+  <p>Aquí nuestros clientes te lo cuentan</p>
+  
+  </div>
+  <div id="c6_seccion2">
+    <img src="img/reseñas.webp">
+  </div>
+
+  
+  
+</div>
+
+
+
+<div id="contenedor7">
+  <div id="c7_seccion1">
+    <h2>🧠 PREGUNTAS FRECUENTES:</h2>
+  </div>
+  <div id="c7_seccion2">
+    <section>
+      <h3>💰 ¿Cuánto costara mi Sitio Web?</h3>
+      <p>Si quieres un precio exacto puedes enviar una cotización </p>
+    </section>
+
+    <section>
+      <h3>
+        ⏳ ¿En cuánto tiempo estará listo mi Sitio Web?</h3>
+      <p>Entre 1 a 2 semanas, pero puedes recibir una fecha más exacta enviado una cotización</p>
+    </section>
+
+    <section>
+      <h3>📐 ¿Cuál es el proceso de trabajo?</h3>
+      <p>1)Recolección de Información,2) Ejecución del Servicio, 3)Correciones </p>
+    </section>
+
+    <section>
+      <h3>📂 ¿Dónde puedo ver más sobre su trabajo?</h3>
+      <p>Al enviar tu cotización podrás conocer nuestro trabajo.</p>
+    </section>
+
+    
+    
+  </div>
+
+</div>
+
+<div id="contenedor8">
+  <img src="img/sandovalguicho.webp">
+  <h2>¿QUIÉN SOY?</h2>
+  <p>Mi nombre es Luis Angel (Fundador de Sandoval Güicho) y soy un apasionado en diseñar e implementar Páginas Web minimalistas con WordPress.</p>
+  <a href="#anclaje"><button id="boton_negro">¡No se diga más, enviar cotización!</button></a>
+</div>
+<script src="controlador.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
+
+    
+</body>
 </html>

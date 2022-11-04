@@ -1,0 +1,1100 @@
+
+
+/*Importar Fuentes*/
+
+@font-face {
+    font-family: "ABeeZee-Regular";
+    src: url("fonts/ABeeZee-Regular.ttf");
+}
+
+
+@font-face {
+    font-family: "ariblk";
+    src: url("fonts/ariblk.ttf");
+}
+
+
+
+/*Tipografias Globales*/
+p,li,button {   font-family: "ABeeZee-Regular", cursive;}
+h1, h2, h3, h4 { font-family: "ariblk", cursive;}
+
+body{
+  margin: 0%;
+  padding: 0%;
+}
+
+
+
+
+
+/* -------------------------Smartfones----------------------------------*/
+
+
+@media screen and (max-width: 700px) {  
+
+
+
+  
+  /* --------------- Contenedor Logotipo -------------------*/  
+  .contenedor_logotipo{
+    padding: 2px 5% 2px 5%;
+    text-align: center;
+}
+
+
+
+/* --------------- Contenedor 1 -------------------*/  
+#contenedor1{
+  
+    padding: 5% 2% 5% 2%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: 0%;
+    background-color:#fcb900;
+  }
+  
+
+#c1_seccion1 { 
+  text-align: center;
+  padding: 0% 5% 0% 5%;
+  display: flex;
+  flex-direction: column;
+
+
+  }
+
+
+  #c1_seccion2{
+    text-align: center;
+    background-color:#fff;
+    border-radius: 5px;
+    padding: 2% 2% 2% 2%;
+    margin: 3% 0%;  
+
+
+  }
+
+
+  .form_1{
+    width: 90%;
+    height: 30px;
+    margin: 4px 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #929292;
+    border-radius: 2px;
+
+
+  }
+
+  #form_mensaje{
+  
+    height: 80px;
+  }
+
+
+  #btn_enviar{
+    font-size: 1em;
+    background: #000;
+    color:#fcb900;
+    margin: 10px 0px 10px 0px;
+    padding: 15px 5px 15px 5px;
+    width: 90%;
+    border-radius: 5px;
+    border-style: none; 
+  }
+
+
+     /* --------------- Contenedor 2 -------------------*/  
+
+  #contenedor2{
+    padding: 10% 5%;
+    display: flex;
+    flex-direction: column-reverse;
+    grid-template-columns: 100%;
+    
+  }
+
+  
+    #c2_seccion1{
+      text-align: left;
+    }
+
+
+    #contenedor2{
+      text-align: center;
+    }
+
+    #contenedor2 > .c2_seccion1 > ul {
+      list-style: none;
+    }
+ 
+
+
+     /* --------------- Contenedor cta -------------------*/  
+
+     .contenedor_cta{
+
+      background:#fff6de;
+      margin: 4% 0%;
+      padding: 4% 2% 5% 2%;
+      display: grid;
+      grid-template-columns: 100%;
+      gap: 2%;
+     }
+
+
+     .cta_seccion1{
+      text-align: center;
+     }
+
+     .cta_seccion2{
+      text-align: center;
+      
+     }
+
+
+     .boton_defecto{
+      background: #fcb900;
+      font-size: 1em;
+      padding: 1em;
+      width: 80%;
+      border-color: #fcb900;
+      border-width: 5px;
+      border-style: none;
+      border-radius: 5px;
+      
+     }
+
+      /* --------------- Contenedor 3 -------------------*/ 
+      
+   #cotenedor3{
+        padding:10% 4% 10% 4%;
+        display: grid;
+        grid-template-columns: 100;
+        grid-row-gap: 4%;
+        
+      }
+
+    #c3_seccion1{
+      padding: 0% 0% 2% 0%;
+      text-align: center;
+    }
+
+    
+    #c3_seccion2{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+
+     
+    }
+
+    
+
+
+
+
+
+      /* --------------- Contenedor 4  -------------------*/  
+
+  #contenedor4 {
+    padding: 10% 4% 10% 4%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: 2%;
+  }
+   
+  #c4_seccion1{
+    text-align: center;
+  }
+
+  #c4_seccion2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  
+
+
+
+
+           /* --------------- Contenedor 5  -------------------*/  
+
+  #contenedor5{
+    padding: 10% 4% 10% 4%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: 10px;
+  }
+
+#c5_seccion1{
+  text-align: center;
+}
+
+  #contenedor5 > #c5_seccion1> img{
+    height:auto;
+    width:80%;
+    
+  }
+
+  #c5_seccion2{
+    text-align:  center;
+ 
+  }
+
+
+
+
+  #contenedor5> #c5_seccion2> li{
+    text-decoration: none;
+  }
+
+
+  #contenedor5> #c5_seccion2> h2{
+    text-decoration: none;
+
+  }
+
+
+
+     /* --------------- Contenedor 6  -------------------*/  
+  
+#contenedor6{
+  background-color:#F2F2F2;
+  padding: 10% 4%;
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+#c6_seccion1{
+    display: grid;
+    grid-row-gap: 5px; 
+    place-content: center;
+    text-align: center;
+    margin: 0% 10% 0% 10%;
+}
+
+#c6_seccion2{
+  text-align: center;
+}
+
+#contenedor6 > #c6_seccion2> img{
+  width: 60%;
+  height: 100%;
+
+}
+
+
+
+ /* --------------- Contenedor 7  -------------------*/  
+
+#contenedor7{
+  margin: 0%;
+  padding: 10% 4%;
+}
+
+#c7_seccion1{
+    text-align: center;
+    padding: 0% 0% 2% 0%;
+}
+
+#c7_seccion2{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  
+
+}
+#contenedor7> #c7_seccion2 > section {
+  border-width: 1px;
+    border-style: solid;
+    border-color: #929292;
+    border-radius: 5px;
+    padding: 4%;
+}
+
+
+/* --------------- Contenedor 8  -------------------*/  
+
+
+#contenedor8{
+  background-color: #fcb900;
+  padding: 10% 5% 2% 5%;
+  text-align: center;
+}
+
+#boton_negro{
+  background: #000;
+  color: #fcb900;
+  font-size: 1em;
+  padding: 1em;
+  width: 85%;
+  border-color: #000;
+  border-width: 5px;
+  border-style: none;
+  border-radius: 5px;
+  
+ }
+
+
+
+ 
+ 
+  h1{
+    font-size: 2.4em;
+    line-height: 1.1em;
+    margin: 0.4em;
+}
+
+h2{
+ font-size: 1.5em;
+ margin: 0.4em;
+}
+
+
+h3{
+ font-size: 1.1em;
+ margin: 0.4em;
+}
+
+
+p{
+  font-size: 1em;
+  line-height: 1.6em;
+  margin: 0.4em;
+}
+
+ul{
+margin: 0.4em;
+}
+
+li{
+ font-size: 1em;
+ line-height: 1.6em;
+ list-style: none;
+ margin: 0.4em;
+ }
+
+
+   
+
+
+}
+
+
+  
+/* -------------------------Tablets----------------------------------*/
+
+@media screen and (min-width: 680px) {
+
+  h1{
+    font-size: 2.6em;
+    line-height: 1.1em;
+    margin: 0.4em;
+}
+
+h2{
+ font-size: 1.5em;
+ margin: 0.4em;
+}
+
+
+h3{
+ font-size: 1.1em;
+ margin: 0.4em;
+}
+
+
+p{
+  font-size: 1.1em;
+  line-height: 1.6em;
+  margin: 0.4em;
+}
+
+ul{
+margin: 0.4em;
+}
+
+li{
+ font-size: 1.2em;
+ line-height: 1.6em;
+ list-style: none;
+ margin: 0.4em;
+ }
+
+
+
+  /* --------------- Contenedor Logotipo -------------------*/  
+  .contenedor_logotipo{
+    padding: 2px 5% 2px 5%;
+    text-align: center;
+}
+
+
+
+/* --------------- Contenedor 1 -------------------*/  
+#contenedor1{
+    padding: 3% 5% 2% 5%;
+    display: grid;
+    gap: 2%;
+    grid-template-columns: 70% 30%;
+    grid-auto-rows: 35em;   
+    background-color: #fcb900;
+  }
+  
+
+#c1_seccion1 { 
+  text-align: left;
+  padding: 0% 10% 0% 5%;
+  display: grid;
+  place-content: center;
+
+
+  }
+
+
+  #c1_seccion2{
+    text-align: center;
+    background-color:#fff;
+    border-radius: 5px;
+    align-items: center;
+    padding: 10% 2% 10% 2%;
+    margin: 10% 0%;  
+
+
+  }
+
+
+  .form_1{
+    width: 90%;
+    height: 30px;
+    margin: 4px 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #929292;
+    border-radius: 2px;
+
+
+  }
+
+  #form_mensaje{
+  
+    height: 80px;
+  }
+
+
+  #btn_enviar{
+    font-size: 1em;
+    background-color: #fcb900;
+    margin: 10px 0px 10px 0px;
+    padding: 15px 5px 15px 5px;
+    width: 90%;
+    border-radius: 5px;
+    border-style: none; 
+  }
+
+
+     /* --------------- Contenedor 2 -------------------*/  
+
+  #contenedor2{
+    padding: 5% 6%;
+    display: grid;
+    gap: 5%;
+    grid-template-columns: 50% 50%;
+    
+  }
+
+  
+        #c2_seccion1{
+      text-align: left;
+    }
+
+
+    #contenedor2 > .c2_seccion1 > ul {
+      list-style: none;
+    }
+ 
+
+
+     /* --------------- Contenedor cta -------------------*/  
+
+     .contenedor_cta{
+
+      background:#fff6de;
+      margin: 2% 0%;
+      padding: 1% 5%;
+      display: grid;
+      grid-template-columns: 70% 30%;
+      gap: 2%;
+     }
+
+
+     .cta_seccion1{
+      text-align: center;
+     }
+
+     .cta_seccion2{
+      display: flex;
+      align-items:center;
+      justify-content: center;
+      
+     }
+
+
+     .boton_defecto{
+      background: #fcb900;
+      font-size: 1em;
+      padding: 1em;
+      width: 80%;
+      border-color: #fcb900;
+      border-width: 5px;
+      border-style: none;
+      border-radius: 5px;
+      
+     }
+
+      /* --------------- Contenedor 3 -------------------*/ 
+      
+   #cotenedor3{
+        padding:5% 5%;
+        
+      }
+
+    #c3_seccion1{
+      padding: 0% 20%;
+      text-align: center;
+    }
+
+    
+    #c3_seccion2{
+      padding: 0% 20%;
+      text-align: left;
+     
+    }
+
+    
+
+
+
+
+
+      /* --------------- Contenedor 4  -------------------*/  
+
+  #contenedor4 {
+    padding: 5% 5%;
+  }
+   
+  #c4_seccion1{
+    padding: 0% 15%;
+    text-align: center;
+  }
+
+  #c4_seccion2{
+    padding: 1%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap:3%;
+    grid-row-gap:3%;
+
+  }
+
+  
+
+
+
+
+           /* --------------- Contenedor 5  -------------------*/  
+
+  #contenedor5{
+    padding: 5% 5%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 5%;
+  }
+
+
+  #contenedor5 > #c5_seccion1> img{
+    height: 100%;
+    width: 100%;
+  }
+
+  #c5_seccion2{
+
+    display: grid;
+    grid-row-gap: 5px; 
+    place-content: center;
+
+
+
+  
+    
+  }
+
+
+
+
+  #contenedor5> #c5_seccion2> li{
+    text-decoration: none;
+  }
+
+
+  #contenedor5> #c5_seccion2> h2{
+    text-decoration: none;
+
+  }
+
+
+
+     /* --------------- Contenedor 6  -------------------*/  
+  
+#contenedor6{
+  background-color:#F2F2F2;
+  padding: 5% 5%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#c6_seccion1{
+  display: grid;
+    grid-row-gap: 5px; 
+    place-content: center;
+    text-align: center;
+    margin: 0% 10% 0% 10%;
+}
+
+#contenedor6 > #c6_seccion2> img{
+  width: 60%;
+  height: 100%;
+}
+
+
+
+ /* --------------- Contenedor 7  -------------------*/  
+
+#contenedor7{
+  margin: 0%;
+  padding: 5% 10%;
+}
+
+#c7_seccion1{
+    text-align: center;
+    padding: 0% 0% 2% 0%;
+}
+#c7_seccion2{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 2%;
+  grid-row-gap: 2%;
+
+}
+#contenedor7> #c7_seccion2 > section {
+  border-width: 1px;
+    border-style: solid;
+    border-color: #929292;
+    border-radius: 5px;
+    padding: 4%;
+}
+
+
+/* --------------- Contenedor 7  -------------------*/  
+
+
+#contenedor8{
+  background-color: #fcb900;
+  padding: 5% 15% 2% 15%;
+  text-align: center;
+
+}
+
+#boton_negro{
+  background: #000;
+  color: #fcb900;
+  font-size: 1em;
+  padding: 1em;
+  width: 50%;
+  border-color: #000;
+  border-width: 5px;
+  border-style: none;
+  border-radius: 5px;
+  
+ }
+
+
+
+
+
+
+  }
+
+
+/* ------------------------- Pantallas Grandes----------------------------------*/
+@media screen and (min-width: 1300px) {
+
+  
+
+      /* --------------- Contenedor Logotipo -------------------*/  
+      .contenedor_logotipo{
+        padding: 2px 10% 2px 10%;
+        text-align: center;
+    }
+   
+    
+    
+   /* --------------- Contenedor 1 -------------------*/  
+    #contenedor1{
+        padding: 3% 20% 2% 20%;
+        display: grid;
+        gap: 2%;
+        grid-template-columns: 70% 30%;
+        grid-auto-rows: 35em;   
+        background-color: #fcb900;
+      }
+      
+
+    #c1_seccion1 { 
+      text-align: left;
+      padding: 0% 10% 0% 5%;
+      display: grid;
+      place-content: center;
+
+
+      }
+
+
+      #c1_seccion2{
+        text-align: center;
+        background-color:#fff;
+        border-radius: 5px;
+        align-items: center;
+        padding: 10% 2% 10% 2%;
+        margin: 10% 0%;  
+
+
+      }
+
+
+      .form_1{
+        width: 90%;
+        height: 30px;
+        margin: 4px 0px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #929292;
+        border-radius: 2px;
+
+
+      }
+
+      #form_mensaje{
+      
+        height: 80px;
+      }
+
+
+      #btn_enviar{
+        font-size: 1em;
+        background-color: #fcb900;
+        margin: 10px 0px 10px 0px;
+        padding: 15px 5px 15px 5px;
+        width: 90%;
+        border-radius: 5px;
+        border-style: none; 
+      }
+    
+
+         /* --------------- Contenedor 2 -------------------*/  
+
+      #contenedor2{
+        padding: 5% 20%;
+        display: grid;
+        gap: 5%;
+        grid-template-columns: 50% 50%;
+        
+      }
+
+      
+            #c2_seccion1{
+          text-align: left;
+        }
+
+
+        #contenedor2 > .c2_seccion1 > ul {
+          list-style: none;
+        }
+     
+
+
+         /* --------------- Contenedor cta -------------------*/  
+
+         .contenedor_cta{
+          background:#fff6de;
+          margin: 2% 0%;
+          padding: 1% 20%;
+          display: grid;
+          grid-template-columns: 70% 30%;
+          gap: 2%;
+         }
+
+
+         .cta_seccion1{
+          text-align: center;
+         }
+
+         .cta_seccion2{
+          display: flex;
+          align-items:center;
+          justify-content: center;
+          
+         }
+
+
+         .boton_defecto{
+          background: #fcb900;
+          font-size: 1em;
+          padding: 1em;
+          width: 80%;
+          border-color: #fcb900;
+          border-width: 5px;
+          border-style: none;
+          border-radius: 5px;
+          
+         }
+
+          /* --------------- Contenedor 3 -------------------*/ 
+          
+       #cotenedor3{
+            padding:5% 20%;
+            
+          }
+
+        #c3_seccion1{
+          padding: 0% 20%;
+          text-align: center;
+        }
+
+        
+        #c3_seccion2{
+          padding: 0% 20%;
+          text-align: left;
+         
+        }
+
+        
+
+
+
+
+
+          /* --------------- Contenedor 4  -------------------*/  
+
+      #contenedor4 {
+        padding: 5% 20%;
+      }
+       
+      #c4_seccion1{
+        padding: 0% 15%;
+        text-align: center;
+      }
+
+      #c4_seccion2{
+        padding: 1%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap:3%;
+        grid-row-gap:3%;
+      }
+
+      
+
+
+
+
+               /* --------------- Contenedor 5  -------------------*/  
+
+      #contenedor5{
+        padding: 5% 20%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 5%;
+      }
+
+
+      #contenedor5 > #c5_seccion1> img{
+        height: 100%;
+        width: 100%;
+      }
+
+      #c5_seccion2{
+
+        display: grid;
+        grid-row-gap: 5px; 
+        place-content: center;
+  
+
+
+      
+        
+      }
+
+
+   
+
+      #contenedor5> #c5_seccion2> li{
+        text-decoration: none;
+      }
+
+
+      #contenedor5> #c5_seccion2> h2{
+        text-decoration: none;
+
+      }
+
+
+
+         /* --------------- Contenedor 6  -------------------*/  
+      
+    #contenedor6{
+      background-color:#F2F2F2;
+      padding: 5% 10%;
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+
+    #c6_seccion1{
+      display: grid;
+        grid-row-gap: 5px; 
+        place-content: center;
+        text-align: center;
+        margin: 0% 10% 0% 10%;
+    }
+
+    #contenedor6 > #c6_seccion2> img{
+      width: 60%;
+      height: 100%;
+    }
+
+    
+
+     /* --------------- Contenedor 7  -------------------*/  
+
+    #contenedor7{
+      margin: 0%;
+      padding: 5% 20%;
+    }
+
+    #c7_seccion1{
+        text-align: center;
+        padding: 0% 0% 2% 0%;
+    }
+    #c7_seccion2{
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-column-gap: 2%;
+
+    }
+    #contenedor7> #c7_seccion2 > section {
+      border-width: 1px;
+        border-style: solid;
+        border-color: #929292;
+        border-radius: 5px;
+        padding: 4%;
+    }
+
+
+    /* --------------- Contenedor 7  -------------------*/  
+
+
+    #contenedor8{
+      background-color: #fcb900;
+      padding: 5% 25% 2% 25%;
+      text-align: center;
+
+    }
+
+    #boton_negro{
+      background: #000;
+      color: #fcb900;
+      font-size: 1em;
+      padding: 1em;
+      width: 50%;
+      border-color: #000;
+      border-width: 5px;
+      border-style: none;
+      border-radius: 5px;
+      
+     }
+
+
+        /*Tipografias*/
+  
+    
+    h1{
+      font-size: 3.5em;
+      line-height: 1.1em;
+      margin: 0.4em;
+ }
+
+ h2{
+   font-size: 2em;
+   margin: 0.4em;
+ }
+
+
+ h3{
+   font-size: 1.2em;
+   margin: 0.4em;
+ }
+
+
+ p{
+    font-size: 1.2em;
+    line-height: 1.6em;
+    margin: 0.4em;
+ }
+
+ul{
+ margin: 0.4em;
+ }
+
+ li{
+   font-size: 1.2em;
+   line-height: 1.6em;
+   list-style: none;
+   margin: 0.4em;
+   }
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
