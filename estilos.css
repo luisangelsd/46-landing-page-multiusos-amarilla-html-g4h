@@ -1,12 +1,11 @@
 
 
-/*Importar Fuentes*/
+/*Importar y Configurar tipografias globales: Estas fuentes se encuentran dentro de la carpera fonts*/
 
 @font-face {
     font-family: "ABeeZee-Regular";
     src: url("fonts/ABeeZee-Regular.ttf");
 }
-
 
 @font-face {
     font-family: "ariblk";
@@ -15,10 +14,17 @@
 
 
 
-/*Tipografias Globales*/
-p,li,button {   font-family: "ABeeZee-Regular", cursive;}
-h1, h2, h3, h4 { font-family: "ariblk", cursive;}
+p,li,button {
+     font-family: "ABeeZee-Regular", cursive;
+    }
 
+h1, h2, h3, h4 {
+   font-family: "ariblk", cursive;
+  }
+
+
+
+/*Configuraciónes Globales: Aquí se encuentran las configuraciónes globales de la plantilla*/
 body{
   margin: 0%;
   padding: 0%;
@@ -28,754 +34,85 @@ body{
 
 
 
-/* -------------------------Smartfones----------------------------------*/
+/* ============================================================ Vista: smartphone ============================================================ */
 
 
 @media screen and (max-width: 700px) {  
 
 
-
-  
-  /* --------------- Contenedor Logotipo -------------------*/  
-  .contenedor_logotipo{
-    padding: 2px 5% 2px 5%;
-    text-align: center;
-}
-
-
-
-/* --------------- Contenedor 1 -------------------*/  
-#contenedor1{
-  
-    padding: 5% 2% 5% 2%;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-row-gap: 0%;
-    background-color:#fcb900;
-  }
-  
-
-#c1_seccion1 { 
-  text-align: center;
-  padding: 0% 5% 0% 5%;
-  display: flex;
-  flex-direction: column;
-
-
-  }
-
-
-  #c1_seccion2{
-    text-align: center;
-    background-color:#fff;
-    border-radius: 5px;
-    padding: 2% 2% 2% 2%;
-    margin: 3% 0%;  
-
-
-  }
-
-
-  .form_1{
-    width: 90%;
-    height: 30px;
-    margin: 4px 0px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #929292;
-    border-radius: 2px;
-
-
-  }
-
-  #form_mensaje{
-  
-    height: 80px;
-  }
-
-
-  #btn_enviar{
-    font-size: 1em;
-    background: #000;
-    color:#fcb900;
-    margin: 10px 0px 10px 0px;
-    padding: 15px 5px 15px 5px;
-    width: 90%;
-    border-radius: 5px;
-    border-style: none; 
-  }
-
-
-     /* --------------- Contenedor 2 -------------------*/  
-
-  #contenedor2{
-    padding: 10% 5%;
-    display: flex;
-    flex-direction: column-reverse;
-    grid-template-columns: 100%;
     
-  }
-
-  
-    #c2_seccion1{
-      text-align: left;
-    }
-
-
-    #contenedor2{
-      text-align: center;
-    }
-
-    #contenedor2 > .c2_seccion1 > ul {
-      list-style: none;
-    }
- 
-
-
-     /* --------------- Contenedor cta -------------------*/  
-
-     .contenedor_cta{
-
-      background:#fff6de;
-      margin: 4% 0%;
-      padding: 4% 2% 5% 2%;
-      display: grid;
-      grid-template-columns: 100%;
-      gap: 2%;
-     }
-
-
-     .cta_seccion1{
-      text-align: center;
-     }
-
-     .cta_seccion2{
-      text-align: center;
-      
-     }
-
-
-     .boton_defecto{
-      background: #fcb900;
-      font-size: 1em;
-      padding: 1em;
-      width: 80%;
-      border-color: #fcb900;
-      border-width: 5px;
-      border-style: none;
-      border-radius: 5px;
-      
-     }
-
-      /* --------------- Contenedor 3 -------------------*/ 
-      
-   #cotenedor3{
-        padding:10% 4% 10% 4%;
-        display: grid;
-        grid-template-columns: 100;
-        grid-row-gap: 4%;
-        
-      }
-
-    #c3_seccion1{
-      padding: 0% 0% 2% 0%;
-      text-align: center;
-    }
-
+   /* --------------- Tamaño y estilo de las fuentes  -------------------*/   
     
-    #c3_seccion2{
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      text-align: center;
-
-     
-    }
-
-    
-
-
-
-
-
-      /* --------------- Contenedor 4  -------------------*/  
-
-  #contenedor4 {
-    padding: 10% 4% 10% 4%;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-row-gap: 2%;
-  }
-   
-  #c4_seccion1{
-    text-align: center;
-  }
-
-  #c4_seccion2 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-  }
-
-  
-
-
-
-
-           /* --------------- Contenedor 5  -------------------*/  
-
-  #contenedor5{
-    padding: 10% 4% 10% 4%;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-row-gap: 10px;
-  }
-
-#c5_seccion1{
-  text-align: center;
-}
-
-  #contenedor5 > #c5_seccion1> img{
-    height:auto;
-    width:80%;
-    
-  }
-
-  #c5_seccion2{
-    text-align:  center;
- 
-  }
-
-
-
-
-  #contenedor5> #c5_seccion2> li{
-    text-decoration: none;
-  }
-
-
-  #contenedor5> #c5_seccion2> h2{
-    text-decoration: none;
-
-  }
-
-
-
-     /* --------------- Contenedor 6  -------------------*/  
-  
-#contenedor6{
-  background-color:#F2F2F2;
-  padding: 10% 4%;
-  display: grid;
-  grid-template-columns: 100%;
-}
-
-#c6_seccion1{
-    display: grid;
-    grid-row-gap: 5px; 
-    place-content: center;
-    text-align: center;
-    margin: 0% 10% 0% 10%;
-}
-
-#c6_seccion2{
-  text-align: center;
-}
-
-#contenedor6 > #c6_seccion2> img{
-  width: 60%;
-  height: 100%;
-
-}
-
-
-
- /* --------------- Contenedor 7  -------------------*/  
-
-#contenedor7{
-  margin: 0%;
-  padding: 10% 4%;
-}
-
-#c7_seccion1{
-    text-align: center;
-    padding: 0% 0% 2% 0%;
-}
-
-#c7_seccion2{
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
-  
-
-}
-#contenedor7> #c7_seccion2 > section {
-  border-width: 1px;
-    border-style: solid;
-    border-color: #929292;
-    border-radius: 5px;
-    padding: 4%;
-}
-
-
-/* --------------- Contenedor 8  -------------------*/  
-
-
-#contenedor8{
-  background-color: #fcb900;
-  padding: 10% 5% 2% 5%;
-  text-align: center;
-}
-
-#boton_negro{
-  background: #000;
-  color: #fcb900;
-  font-size: 1em;
-  padding: 1em;
-  width: 85%;
-  border-color: #000;
-  border-width: 5px;
-  border-style: none;
-  border-radius: 5px;
-  
- }
-
-
-
- 
- 
-  h1{
+   h1{
     font-size: 2.4em;
     line-height: 1.1em;
     margin: 0.4em;
 }
 
-h2{
- font-size: 1.5em;
- margin: 0.4em;
-}
-
-
-h3{
- font-size: 1.1em;
- margin: 0.4em;
-}
-
-
-p{
-  font-size: 1em;
-  line-height: 1.6em;
-  margin: 0.4em;
-}
-
-ul{
-margin: 0.4em;
-}
-
-li{
- font-size: 1em;
- line-height: 1.6em;
- list-style: none;
- margin: 0.4em;
- }
-
-
-   
-
-
-}
-
-
-  
-/* -------------------------Tablets----------------------------------*/
-
-@media screen and (min-width: 680px) {
-
-  h1{
-    font-size: 2.6em;
-    line-height: 1.1em;
+    h2{
+    font-size: 1.5em;
     margin: 0.4em;
-}
-
-h2{
- font-size: 1.5em;
- margin: 0.4em;
-}
-
-
-h3{
- font-size: 1.1em;
- margin: 0.4em;
-}
-
-
-p{
-  font-size: 1.1em;
-  line-height: 1.6em;
-  margin: 0.4em;
-}
-
-ul{
-margin: 0.4em;
-}
-
-li{
- font-size: 1.2em;
- line-height: 1.6em;
- list-style: none;
- margin: 0.4em;
- }
-
-
-
-  /* --------------- Contenedor Logotipo -------------------*/  
-  .contenedor_logotipo{
-    padding: 2px 5% 2px 5%;
-    text-align: center;
-}
-
-
-
-/* --------------- Contenedor 1 -------------------*/  
-#contenedor1{
-    padding: 3% 5% 2% 5%;
-    display: grid;
-    gap: 2%;
-    grid-template-columns: 70% 30%;
-    grid-auto-rows: 35em;   
-    background-color: #fcb900;
-  }
-  
-
-#c1_seccion1 { 
-  text-align: left;
-  padding: 0% 10% 0% 5%;
-  display: grid;
-  place-content: center;
-
-
-  }
-
-
-  #c1_seccion2{
-    text-align: center;
-    background-color:#fff;
-    border-radius: 5px;
-    align-items: center;
-    padding: 10% 2% 10% 2%;
-    margin: 10% 0%;  
-
-
-  }
-
-
-  .form_1{
-    width: 90%;
-    height: 30px;
-    margin: 4px 0px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #929292;
-    border-radius: 2px;
-
-
-  }
-
-  #form_mensaje{
-  
-    height: 80px;
-  }
-
-
-  #btn_enviar{
-    font-size: 1em;
-    background-color: #fcb900;
-    margin: 10px 0px 10px 0px;
-    padding: 15px 5px 15px 5px;
-    width: 90%;
-    border-radius: 5px;
-    border-style: none; 
-  }
-
-
-     /* --------------- Contenedor 2 -------------------*/  
-
-  #contenedor2{
-    padding: 5% 6%;
-    display: grid;
-    gap: 5%;
-    grid-template-columns: 50% 50%;
-    
-  }
-
-  
-        #c2_seccion1{
-      text-align: left;
     }
 
 
-    #contenedor2 > .c2_seccion1 > ul {
-      list-style: none;
+    h3{
+    font-size: 1.1em;
+    margin: 0.4em;
     }
- 
 
 
-     /* --------------- Contenedor cta -------------------*/  
-
-     .contenedor_cta{
-
-      background:#fff6de;
-      margin: 2% 0%;
-      padding: 1% 5%;
-      display: grid;
-      grid-template-columns: 70% 30%;
-      gap: 2%;
-     }
-
-
-     .cta_seccion1{
-      text-align: center;
-     }
-
-     .cta_seccion2{
-      display: flex;
-      align-items:center;
-      justify-content: center;
-      
-     }
-
-
-     .boton_defecto{
-      background: #fcb900;
+    p{
       font-size: 1em;
-      padding: 1em;
-      width: 80%;
-      border-color: #fcb900;
-      border-width: 5px;
-      border-style: none;
-      border-radius: 5px;
-      
-     }
+      line-height: 1.6em;
+      margin: 0.4em;
+    }
 
-      /* --------------- Contenedor 3 -------------------*/ 
-      
-   #cotenedor3{
-        padding:5% 5%;
-        
-      }
+    ul{
+    margin: 0.4em;
+    }
 
-    #c3_seccion1{
-      padding: 0% 20%;
+    li{
+    font-size: 1em;
+    line-height: 1.6em;
+    list-style: none;
+    margin: 0.4em;
+    }
+
+      
+      /* --------------- Contenedor 1: Menú -------------------*/  
+    #contenedor1_menu{
+      padding: 2px 10% 2px 10%;
       text-align: center;
     }
 
-    
-    #c3_seccion2{
-      padding: 0% 20%;
-      text-align: left;
-     
-    }
-
-    
 
 
-
-
-
-      /* --------------- Contenedor 4  -------------------*/  
-
-  #contenedor4 {
-    padding: 5% 5%;
-  }
-   
-  #c4_seccion1{
-    padding: 0% 15%;
-    text-align: center;
-  }
-
-  #c4_seccion2{
-    padding: 1%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-column-gap:3%;
-    grid-row-gap:3%;
-
-  }
-
-  
-
-
-
-
-           /* --------------- Contenedor 5  -------------------*/  
-
-  #contenedor5{
-    padding: 5% 5%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 5%;
-  }
-
-
-  #contenedor5 > #c5_seccion1> img{
-    height: 100%;
-    width: 100%;
-  }
-
-  #c5_seccion2{
-
-    display: grid;
-    grid-row-gap: 5px; 
-    place-content: center;
-
-
-
-  
-    
-  }
-
-
-
-
-  #contenedor5> #c5_seccion2> li{
-    text-decoration: none;
-  }
-
-
-  #contenedor5> #c5_seccion2> h2{
-    text-decoration: none;
-
-  }
-
-
-
-     /* --------------- Contenedor 6  -------------------*/  
-  
-#contenedor6{
-  background-color:#F2F2F2;
-  padding: 5% 5%;
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-
-#c6_seccion1{
-  display: grid;
-    grid-row-gap: 5px; 
-    place-content: center;
-    text-align: center;
-    margin: 0% 10% 0% 10%;
-}
-
-#contenedor6 > #c6_seccion2> img{
-  width: 60%;
-  height: 100%;
-}
-
-
-
- /* --------------- Contenedor 7  -------------------*/  
-
-#contenedor7{
-  margin: 0%;
-  padding: 5% 10%;
-}
-
-#c7_seccion1{
-    text-align: center;
-    padding: 0% 0% 2% 0%;
-}
-#c7_seccion2{
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-column-gap: 2%;
-  grid-row-gap: 2%;
-
-}
-#contenedor7> #c7_seccion2 > section {
-  border-width: 1px;
-    border-style: solid;
-    border-color: #929292;
-    border-radius: 5px;
-    padding: 4%;
-}
-
-
-/* --------------- Contenedor 7  -------------------*/  
-
-
-#contenedor8{
-  background-color: #fcb900;
-  padding: 5% 15% 2% 15%;
-  text-align: center;
-
-}
-
-#boton_negro{
-  background: #000;
-  color: #fcb900;
-  font-size: 1em;
-  padding: 1em;
-  width: 50%;
-  border-color: #000;
-  border-width: 5px;
-  border-style: none;
-  border-radius: 5px;
-  
- }
-
-
-
-
-
-
-  }
-
-
-/* ------------------------- Pantallas Grandes----------------------------------*/
-@media screen and (min-width: 1300px) {
-
-  
-
-      /* --------------- Contenedor Logotipo -------------------*/  
-      .contenedor_logotipo{
-        padding: 2px 10% 2px 10%;
-        text-align: center;
-    }
-   
-    
-    
-   /* --------------- Contenedor 1 -------------------*/  
-    #contenedor1{
-        padding: 3% 20% 2% 20%;
+    /* --------------- Contenedor 2: Problematica -------------------*/  
+    #contenedor2_problematica{  
+        padding: 5% 2% 5% 2%;
         display: grid;
-        gap: 2%;
-        grid-template-columns: 70% 30%;
-        grid-auto-rows: 35em;   
-        background-color: #fcb900;
+        grid-template-columns: 100%;
+        grid-row-gap: 0%;
+        background-image: linear-gradient(to left,rgb(253, 183, 195),#fac431);
       }
       
 
-    #c1_seccion1 { 
-      text-align: left;
-      padding: 0% 10% 0% 5%;
-      display: grid;
-      place-content: center;
+    #contenedor2_seccion1 { 
+      text-align: center;
+      padding: 0% 5% 0% 5%;
+      display: flex;
+      flex-direction: column;
+    }
 
 
-      }
-
-
-      #c1_seccion2{
+    #contenedor2_seccion2{
         text-align: center;
         background-color:#fff;
         border-radius: 5px;
-        align-items: center;
-        padding: 10% 2% 10% 2%;
-        margin: 10% 0%;  
-
-
+        padding: 2% 2% 2% 2%;
+        margin: 3% 0%;  
       }
+
 
 
       .form_1{
@@ -786,315 +123,843 @@ li{
         border-style: solid;
         border-color: #929292;
         border-radius: 2px;
-
-
       }
 
       #form_mensaje{
-      
-        height: 80px;
+        height: 100px;
       }
-
 
       #btn_enviar{
         font-size: 1em;
-        background-color: #fcb900;
+        background: #000;
+        color:#fcb900;
         margin: 10px 0px 10px 0px;
         padding: 15px 5px 15px 5px;
         width: 90%;
         border-radius: 5px;
         border-style: none; 
       }
+
+
+
+      /* --------------- Contenedor 3: Agitacion -------------------*/  
+      #contenedor3_agitacion{
+        padding: 10% 5%;
+        display: flex;
+        flex-direction: column-reverse;
+        grid-template-columns: 100%; 
+      }
+
+      #contenedor3_seccion1{
+        text-align: left;
+      }
+
+      #contenedor3_seccion2{
+        text-align: center;
+      }
+
+      #contenedor3_agitacion > .contenedor3_seccion1 > ul {
+        list-style: none;
+      }
     
 
-         /* --------------- Contenedor 2 -------------------*/  
 
-      #contenedor2{
-        padding: 5% 20%;
+      /* --------------- Contenedor Call to action -------------------*/  
+      .contenedor_call_to_action{
+        background-image: linear-gradient(to left,rgba(255, 192, 203, 0.24),rgba(255, 166, 0, 0.178));
+        margin: 4% 0%;
+        padding: 4% 2% 5% 2%;
         display: grid;
-        gap: 5%;
-        grid-template-columns: 50% 50%;
-        
+        grid-template-columns: 100%;
+        gap: 2%;
       }
 
-      
-            #c2_seccion1{
-          text-align: left;
-        }
 
-
-        #contenedor2 > .c2_seccion1 > ul {
-          list-style: none;
-        }
-     
-
-
-         /* --------------- Contenedor cta -------------------*/  
-
-         .contenedor_cta{
-          background:#fff6de;
-          margin: 2% 0%;
-          padding: 1% 20%;
-          display: grid;
-          grid-template-columns: 70% 30%;
-          gap: 2%;
-         }
-
-
-         .cta_seccion1{
-          text-align: center;
-         }
-
-         .cta_seccion2{
-          display: flex;
-          align-items:center;
-          justify-content: center;
-          
-         }
-
-
-         .boton_defecto{
-          background: #fcb900;
-          font-size: 1em;
-          padding: 1em;
-          width: 80%;
-          border-color: #fcb900;
-          border-width: 5px;
-          border-style: none;
-          border-radius: 5px;
-          
-         }
-
-          /* --------------- Contenedor 3 -------------------*/ 
-          
-       #cotenedor3{
-            padding:5% 20%;
-            
-          }
-
-        #c3_seccion1{
-          padding: 0% 20%;
-          text-align: center;
-        }
-
-        
-        #c3_seccion2{
-          padding: 0% 20%;
-          text-align: left;
-         
-        }
-
-        
-
-
-
-
-
-          /* --------------- Contenedor 4  -------------------*/  
-
-      #contenedor4 {
-        padding: 5% 20%;
-      }
-       
-      #c4_seccion1{
-        padding: 0% 15%;
+      .contenedor_call_to_action_seccion1{
         text-align: center;
       }
 
-      #c4_seccion2{
-        padding: 1%;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-column-gap:3%;
-        grid-row-gap:3%;
-      }
-
-      
-
-
-
-
-               /* --------------- Contenedor 5  -------------------*/  
-
-      #contenedor5{
-        padding: 5% 20%;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-column-gap: 5%;
+      .contenedor_call_to_action_seccion2{
+        text-align: center; 
       }
 
 
-      #contenedor5 > #c5_seccion1> img{
-        height: 100%;
-        width: 100%;
+      .boton_call_to_action{
+        background: #fcb900;
+        font-size: 1em;
+        padding: 1em;
+        width: 80%;
+        border-color: #fcb900;
+        border-width: 5px;
+        border-style: none;
+        border-radius: 5px; 
       }
 
-      #c5_seccion2{
 
+      /* --------------- Contenedor 4: Solución -------------------*/    
+      #cotenedor4_solucion{
+        padding:10% 4% 10% 4%;
         display: grid;
-        grid-row-gap: 5px; 
-        place-content: center;
-  
+        grid-template-columns: 100;
+        grid-row-gap: 4%;     
+      }
 
+      #cotenedor4_seccion1{
+        padding: 0% 0% 2% 0%;
+        text-align: center;
+      }
 
-      
         
-      }
-
-
-   
-
-      #contenedor5> #c5_seccion2> li{
-        text-decoration: none;
-      }
-
-
-      #contenedor5> #c5_seccion2> h2{
-        text-decoration: none;
-
+      #cotenedor4_seccion2{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
       }
 
 
 
-         /* --------------- Contenedor 6  -------------------*/  
+      /* --------------- Contenedor 5: Oferta  -------------------*/  
+      #contenedor5_oferta {
+        padding: 10% 4% 10% 4%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-row-gap: 2%;
+      }
       
-    #contenedor6{
+      #contenedor5_seccion1{
+        text-align: center;
+      }
+
+      #contenedor5_seccion2 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+      }
+
+ 
+
+      /* --------------- Contenedor 6: Beneficios Destacados  -------------------*/  
+      #contenedor6_beneficios_destacados{
+        padding: 10% 4% 10% 4%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-row-gap: 10px;
+      }
+
+    #contenedor6_seccion1{
+      text-align: center;
+    }
+
+    #contenedor6_beneficios_destacados> #contenedor6_seccion1> img{
+      height:auto;
+      width:80%;
+      border-radius: 10px;        
+    }  
+
+    #contenedor6_seccion2{
+      text-align:  center;
+    }
+
+      #contenedor6_beneficios_destacados> #contenedor6_seccion2> li{
+        text-decoration: none;
+      }
+
+    #contenedor6_beneficios_destacados> #contenedor6_seccion2> h2{
+       text-decoration: none;
+    }
+
+
+     /* --------------- Contenedor 7: Testimonios  -------------------*/  
+    #contenedor7_testimonios {
       background-color:#F2F2F2;
-      padding: 5% 10%;
+      padding: 10% 4%;
       display: grid;
-      grid-template-columns: 50% 50%;
+      grid-template-columns: 100%;
     }
 
-    #c6_seccion1{
+    #contenedor7_seccion1{
       display: grid;
-        grid-row-gap: 5px; 
-        place-content: center;
-        text-align: center;
-        margin: 0% 10% 0% 10%;
+      grid-row-gap: 5px; 
+      place-content: center;
+      text-align: center;
+      margin: 0% 10% 0% 10%;
     }
 
-    #contenedor6 > #c6_seccion2> img{
+    #contenedor7_seccion2{
+      text-align: center;
+    }
+
+    #contenedor7_testimonios  > #contenedor7_seccion2> img{
       width: 60%;
       height: 100%;
     }
 
-    
 
-     /* --------------- Contenedor 7  -------------------*/  
 
-    #contenedor7{
+    /* --------------- Contenedor 8: Preguntas frecuentes  -------------------*/  
+    #contenedor8_preguntas_frecuentes{
       margin: 0%;
-      padding: 5% 20%;
+      padding: 10% 4%;
     }
 
-    #c7_seccion1{
-        text-align: center;
-        padding: 0% 0% 2% 0%;
-    }
-    #c7_seccion2{
-      display: grid;
-      grid-template-columns: 25% 25% 25% 25%;
-      grid-column-gap: 2%;
-
-    }
-    #contenedor7> #c7_seccion2 > section {
-      border-width: 1px;
-        border-style: solid;
-        border-color: #929292;
-        border-radius: 5px;
-        padding: 4%;
-    }
-
-
-    /* --------------- Contenedor 7  -------------------*/  
-
-
-    #contenedor8{
-      background-color: #fcb900;
-      padding: 5% 25% 2% 25%;
+    #contenedor8_seccion1{
       text-align: center;
-
+      padding: 0% 0% 2% 0%;
     }
 
-    #boton_negro{
+    #contenedor8_seccion2{
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+    }
+
+    #contenedor8_preguntas_frecuentes> #contenedor8_seccion2 > section {
+      border-width: 1px;
+      border-style: solid;
+      border-color: #929292;
+      border-radius: 5px;
+      padding: 4%;
+    }
+
+    /* --------------- Contenedor 9: Call to action  -------------------*/  
+    #contenedor9_call_to_action{
+      background-image: linear-gradient(to left,rgb(253, 183, 195),#fac431);
+      padding: 10% 5% 2% 5%;
+      text-align: center;
+    }
+
+    #contenedor9_call_to_action>img{
+      border-radius: 50%;
+      width:40%;
+    }
+
+    #boton_call_to_action_negro{
       background: #000;
       color: #fcb900;
       font-size: 1em;
       padding: 1em;
-      width: 50%;
+      width: 85%;
       border-color: #000;
       border-width: 5px;
       border-style: none;
-      border-radius: 5px;
-      
-     }
+      border-radius: 5px;   
+    }
 
+  } /*End vista smartphone */
 
-        /*Tipografias*/
   
-    
-    h1{
-      font-size: 3.5em;
-      line-height: 1.1em;
-      margin: 0.4em;
- }
 
- h2{
+
+
+
+/* ============================================================ Vista: Tablets =================================================================*/
+
+@media screen and (min-width: 680px) {
+
+  /* --------------- Tamaño y estilo de las fuentes  -------------------*/   
+
+   h1{
+    font-size: 2.8em;
+    line-height: 1.1em;
+    margin: 0.4em;
+  }
+  
+  h2{
+    font-size: 1.5em;
+    margin: 0.4em;
+  }
+  
+  
+  h3{
+    font-size: 1.1em;
+    margin: 0.4em;
+  }
+  
+  
+  p{
+    font-size: 1.1em;
+    line-height: 1.6em;
+    margin: 0.4em;
+  }
+  
+  ul{
+    margin: 0.4em;
+  }
+  
+  li{
+    font-size: 1.2em;
+    line-height: 1.6em;
+    list-style: none;
+    margin: 0.4em;
+  }
+
+
+  /* --------------- Contenedor 1: Menú -------------------*/  
+  #contenedor1_menu{
+    padding: 2px 5% 2px 5%;
+    text-align: center;
+  }
+
+
+
+  /* --------------- Contenedor 2: Problematica -------------------*/  
+  #contenedor2_problematica{
+    padding: 3% 5% 2% 5%;
+    display: grid;
+    gap: 2%;
+    grid-template-columns: 70% 30%;
+    grid-auto-rows: 35em;   
+    background-image: linear-gradient(to left,rgb(253, 183, 195),#fac431);
+  }
+  
+
+  #contenedor2_seccion1{ 
+    text-align: left;
+    padding: 0% 10% 0% 5%;
+    display: grid;
+    place-content: center;
+  }
+
+
+  #contenedor2_seccion2{
+    text-align: center;
+    background-color:#fff;
+   border-radius: 5px;
+    align-items: center;
+    padding: 10% 2% 10% 2%;
+    margin: 10% 0%;  
+  }
+
+  #form_mensaje{
+    height: 120px;
+  }
+
+  .form_1{
+    width: 90%;
+    height: 30px;
+    margin: 4px 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #929292;
+    border-radius: 2px;
+  }
+
+
+  #btn_enviar{
+    font-size: 1em;
+    background-color: #fcb900;
+    margin: 10px 0px 10px 0px;
+    padding: 15px 5px 15px 5px;
+    width: 90%;
+    border-radius: 5px;
+    border-style: none; 
+  }
+
+
+  /* --------------- Contenedor 3: Agitacion -------------------*/  
+
+  #contenedor3_agitacion{
+    padding: 5% 6%;
+    display: grid;
+    gap: 5%;
+    grid-template-columns: 50% 50%; 
+  }
+
+  
+  #contenedor3_seccion1{
+    text-align: left;
+  }
+
+
+  #contenedor3_agitacion> .contenedor3_seccion1 > ul {
+    list-style: none;
+  }
+ 
+
+
+  /* --------------- Contenedor Call to Action -------------------*/  
+
+  .contenedor_call_to_action{
+    background-image: linear-gradient(to left,rgba(255, 192, 203, 0.24),rgba(255, 166, 0, 0.178));
+    margin: 2% 0%;
+    padding: 1% 5%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 2%;
+  }
+
+
+  .contenedor_call_to_action_seccion1{
+    text-align: center;
+  }
+
+  .contenedor_call_to_action_seccion2{
+    display: flex;
+    align-items:center;
+    justify-content: center; 
+  }
+
+
+  .boton_call_to_action{
+    background: #fcb900;
+    font-size: 1em;
+    padding: 1em;
+    width: 80%;
+    border-color: #fcb900;
+    border-width: 5px;
+    border-style: none;
+    border-radius: 5px;  
+  }
+
+
+  /* --------------- Contenedor 4: Solucion -------------------*/     
+  #cotenedor4_solucion{
+    padding:5% 5%;    
+  }
+
+  #cotenedor4_seccion1{
+    padding: 0% 20%;
+    text-align: center;
+  }
+    
+  #cotenedor4_seccion2{
+    padding: 0% 20%;
+    text-align: left;  
+  }
+
+
+  /* --------------- Contenedor 5: Oferta  -------------------*/  
+  #contenedor5_oferta {
+    padding: 5% 5%;
+  }
+   
+  #contenedor5_seccion1{
+    padding: 0% 15%;
+    text-align: center;
+  }
+
+  #contenedor5_seccion2{
+    padding: 1%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap:3%;
+    grid-row-gap:3%;
+  }
+
+  
+
+
+
+
+  /* --------------- Contenedor 6: Beneficios Destacados  -------------------*/  
+  #contenedor6_beneficios_destacados{
+    padding: 5% 5%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 5%;
+  }
+
+
+  #contenedor6_beneficios_destacados > #contenedor6_seccion1> img{
+    height:auto;
+    width:80%;
+    border-radius: 10px;  
+  }
+
+  #contenedor6_seccion2{
+    display: grid;
+    grid-row-gap: 5px; 
+    place-content: center;
+  }
+
+
+  #contenedor6_beneficios_destacados> #contenedor6_seccion2> li{
+    text-decoration: none;
+  }
+
+
+  #contenedor6_beneficios_destacados> #contenedor6_seccion2> h2{
+    text-decoration: none;
+
+  }
+
+
+
+  /* --------------- Contenedor 7: Testimonios  -------------------*/  
+  
+  #contenedor7_testimonios{
+    background-color:#F2F2F2;
+    padding: 5% 5%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  #contenedor7_seccion1{
+    display: grid;
+    grid-row-gap: 5px; 
+    place-content: center;
+    text-align: center;
+    margin: 0% 10% 0% 10%;
+  }
+
+  #contenedor7_testimonios > #contenedor7_seccion2> img{
+    width: 60%;
+    height: 100%;
+  }
+
+
+
+  /* --------------- Contenedor 8: Preguntas Frecuentes  -------------------*/  
+
+  #contenedor8_preguntas_frecuentes{
+    margin: 0%;
+    padding: 5% 10%;
+  }
+
+  #contenedor8_seccion1{
+      text-align: center;
+      padding: 0% 0% 2% 0%;
+  }
+
+  #contenedor8_seccion2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 2%;
+    grid-row-gap: 2%;
+  }
+
+  #contenedor8_preguntas_frecuentes> #contenedor8_seccion2 > section {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #929292;
+    border-radius: 5px;
+    padding: 4%;
+  }
+
+
+
+  /* --------------- Contenedor 9: Call to action  -------------------*/  
+  #contenedor9_call_to_action{
+    background-image: linear-gradient(to left,rgb(253, 183, 195),#fac431);
+    padding: 5% 15% 2% 15%;
+    text-align: center;
+  }
+
+  #contenedor9_call_to_action>img{
+    border-radius: 50%;
+    width:40%;
+  }
+
+  #boton_call_to_action_negro{
+    background: #000;
+    color: #fcb900;
+    font-size: 1em;
+    padding: 1em;
+    width: 50%;
+    border-color: #000;
+    border-width: 5px;
+    border-style: none;
+    border-radius: 5px;
+  }
+
+} /*End vista Tablet´s*/
+
+
+
+
+/* ============================================================ Vista: Pantallas Grandes ============================================================ */
+@media screen and (min-width: 1300px) {
+
+
+  /* --------------- Tamaño y estilo de las fuentes  -------------------*/        
+  h1{
+    font-size: 3.5em;
+    line-height: 1.1em;
+    margin: 0.4em;
+  }
+
+  h2{
    font-size: 2em;
    margin: 0.4em;
- }
+  }
 
 
- h3{
+  h3{
    font-size: 1.2em;
    margin: 0.4em;
- }
+  }
 
 
- p{
+  p{
     font-size: 1.2em;
     line-height: 1.6em;
     margin: 0.4em;
- }
+  }
 
-ul{
- margin: 0.4em;
- }
+  ul{
+    margin: 0.4em;
+  }
 
  li{
    font-size: 1.2em;
    line-height: 1.6em;
    list-style: none;
    margin: 0.4em;
-   }
+ }
 
 
+  /* --------------- Contenedor 1: Menú -------------------*/  
+  #contenedor1_menu{
+    padding: 2px 10% 2px 10%;
+    text-align: center;
+  }
+   
+    
+    
+  /* ------------- Contenedor 2: Problematica ------------*/  
+  #contenedor2_problematica{
+    padding: 3% 20% 2% 20%;
+    display: grid;
+    gap: 2%;
+    grid-template-columns: 70% 30%;
+    grid-auto-rows: 35em;   
+    background-image: linear-gradient(to left,rgb(253, 183, 195),#fac431);
+  }
+    
+  #contenedor2_seccion1 { 
+    text-align: left;
+    padding: 0% 10% 0% 5%;
+    display: grid;
+    place-content: center;
+  }
 
+
+  #contenedor2_seccion2{
+    text-align: center;
+    background-color:#fff;
+    border-radius: 5px;
+    align-items: center;
+    padding: 10% 2% 10% 2%;
+    margin: 10% 0%;  
+  }
+
+  .form_1{
+    width: 90%;
+    height: 30px;
+    margin: 4px 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #929292;
+    border-radius: 2px;
+  }
+
+  #form_mensaje{
+    height: 120px;
+  }
+
+  #btn_enviar{
+    font-size: 1em;
+    background-color: #fcb900dc;
+    margin: 10px 0px 10px 0px;
+    padding: 15px 5px 15px 5px;
+    width: 90%;
+    border-radius: 5px;
+    border-style: none; 
+  }
+    
+
+  /* --------------- Contenedor 3: Agitación -------------------*/  
+  #contenedor3_agitacion{
+    padding: 5% 20%;
+    display: grid;
+    gap: 5%;
+    grid-template-columns: 50% 50%;    
+  }
+      
+  #contenedor3_seccion1{
+    text-align: left;
+  }
+
+  #contenedor3_agitacion> .contenedor3_seccion1 > ul {
+    list-style: none;
+  }
+    
+
+
+  /* --------------- Contenedor: Call to Action -------------------*/  
+  .contenedor_call_to_action{
+    background-image: linear-gradient(to left,rgba(255, 192, 203, 0.24),rgba(255, 166, 0, 0.178));
+    margin: 2% 0%;
+    padding: 1% 20%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 2%;
+    }
+
+  .contenedor_call_to_action_seccion1{
+     text-align: center;
+  }
+
+  .contenedor_call_to_action_seccion2{
+    display: flex;
+    align-items:center;
+    justify-content: center;     
+  }
+
+  .boton_call_to_action{
+    background: #fcb900dc;
+    font-size: 1em;
+    padding: 1em;
+    width: 100%;
+    border-color: #fcb900dc;
+    border-width: 5px;
+    border-style: none;
+    border-radius: 5px;   
+  }
+
+
+  /* --------------- Contenedor 4: Solucion -------------------*/      
+  #cotenedor4_solucion{
+    padding:5% 20%;      
+  }
+
+  #cotenedor4_seccion1{
+    padding: 0% 20%;
+    text-align: center;
+  }
+      
+  #cotenedor4_seccion2{
+    padding: 0% 20%;
+    text-align: left;    
   }
 
 
 
+  /* --------------- Contenedor 5: Oferta  -------------------*/  
+
+  #contenedor5_oferta {
+    padding: 5% 20%;
+  }
+       
+  #contenedor5_seccion1{
+    padding: 0% 15%;
+    text-align: center;
+  }
+
+  #contenedor5_seccion2{
+    padding: 1%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap:3%;
+    grid-row-gap:3%;
+  }
+
+
+  /* --------------- Contenedor 6: Beneficios Destacados  -------------------*/  
+  #contenedor6_beneficios_destacados{
+    padding: 5% 20%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 5%;
+  }
+
+  #contenedor6_beneficios_destacados> #contenedor6_seccion1> img{
+    height:auto;
+    width:80%;
+    border-radius: 10px;   
+  }
+
+  #contenedor6_seccion2{
+    display: grid;
+    grid-row-gap: 5px; 
+    place-content: center;
+  }
+
+  #contenedor6_beneficios_destacados> #contenedor6_seccion2> li{
+    text-decoration: none;
+  }
+
+  #contenedor6_beneficios_destacados> #contenedor6_seccion2> h2{
+    text-decoration: none;
+  }
 
 
 
+  /* --------------- Contenedor 7: Testimonios  -------------------*/  
+      
+  #contenedor7_testimonios{
+    background-color:#F2F2F2;
+    padding: 5% 10%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  #contenedor7_seccion1{
+    display: grid;
+    grid-row-gap: 5px; 
+    place-content: center;
+    text-align: center;
+    margin: 0% 10% 0% 10%;
+  }
+
+  #ontenedor7_testimonios > #contenedor7_seccion2> img{
+    width: 60%;
+    height: 100%;
+  }
+
+    
+
+  /* --------------- Contenedor 8: Preguntas Frecuentes  -------------------*/  
+
+  #contenedor8_preguntas_frecuentes{
+    margin: 0%;
+    padding: 5% 20%;
+  }
+
+  #contenedor8_seccion1{
+    text-align: center;
+    padding: 0% 0% 2% 0%;
+  }
+  
+  #contenedor8_seccion2{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-column-gap: 2%;
+  }
+
+  #contenedor8_preguntas_frecuentes> #contenedor8_seccion2 > section {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #929292;
+    border-radius: 5px;
+    padding: 4%;
+  }
 
 
+  /* --------------- Contenedor 9: Call to action  -------------------*/  
+  #contenedor9_call_to_action{
+    background-image: linear-gradient(to left,rgb(255, 189, 200),#fcc223);
+    padding: 5% 25% 2% 25%;
+    text-align: center;
+  }
 
- 
+  #contenedor9_call_to_action>img{
+    border-radius: 50%;
+    width:20%;
+  }
 
+  #boton_call_to_action_negro{
+    background: #000;
+    color: #fcb900;
+    font-size: 1em;
+    padding: 1em;
+    width: 50%;
+    border-color: #000;
+    border-width: 5px;
+    border-style: none;
+    border-radius: 5px;    
+  }
 
- 
- 
- 
-
-
-
-
-
-
-
-
- 
-
-
-
+} /*End: Vista pantallas grandes*/ 

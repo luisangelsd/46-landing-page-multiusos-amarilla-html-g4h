@@ -1,18 +1,17 @@
  <?php   
 
-
+  // Guardamos los datos que resivimos por el metodo POST y las guardamos en variables
   $nombre =filter_input(INPUT_POST, 'nombre');
   $correo =filter_input(INPUT_POST,'correo');
   $telefono=filter_input(INPUT_POST,'telefono');
-  $interes =filter_input(INPUT_POST,'interes');
-  $hosting =filter_input(INPUT_POST,'hosting');
   $mensaje =filter_input(INPUT_POST,'mensaje');
 
 
-  $mensaje_completo="Datos Recolectados:"."Nombre: ". $nombre. " Correo: ".$correo. "Telefono".$telefono. " Interes:".$interes. " Hosting:".$hosting." Mensaje:".$mensaje;
+  $mensaje_completo="Datos Recolectados\n "."Nombre: ". $nombre. "\n Correo: ".$correo. "\n Telefono: ".$telefono. "\n Mensaje: ".$mensaje;
 
-  $para="sandovalguichoo@gmail.com";
-  $subject="Nuevo Mensaje Recibido";
+  
+  $para="sandovalguichoo@gmail.com"; //Añade el correo en el cual recibiras la información
+  $subject="Felicidades, tienes un nuevo mensaje :3"; // Añade un mensaje como encabezado
   mail($para, $subject, $mensaje_completo);
 
 
