@@ -52,8 +52,8 @@ if (this.validacionFormulario()) {
           
             $.ajax({
 
-                  url: "modelo.php", //Este es el servicio que envia la información a un correo electronico
-                  data:datos,        // Estos son los datos recolectados del formulario.
+                  url: "modelo.php", //Este es el servicio que envia la información a un correo electrónico
+                  data:datos,        // Estos son los datos recolectados del formulario
                   method: "POST",    // Este es el metodo por el cual se enviara la petición
 
                   // Este se ejecutara antes de enviar la petición.

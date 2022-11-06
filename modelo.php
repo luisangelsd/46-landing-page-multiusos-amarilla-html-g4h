@@ -14,8 +14,8 @@
   ."\n Mensaje: ".$mensaje;
 
   
-  $para="tucorreo@ejemplo.com";                    //Añade el correo en el cual recibiras la información
-  $subject="¡Felicidades, tienes un nuevo mensaje!";   // Añade un mensaje como encabezado
+  $para="tucorreo@ejemplo.com";                         //Añade el correo en el cual recibiras la información
+  $subject="¡Felicidades, tienes un nuevo mensaje!";    // Añade un mensaje como encabezado
   mail($para, $subject, $mensaje_completo);             // Aquí se envia el formulario 
 
 
