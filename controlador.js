@@ -13,7 +13,7 @@ function validacionFormulario(){
       if(correo !=""){
         if(telefono!=""){
           if (mensaje!="") {
-                respuesta=true;
+                   
             }
         }
       }
@@ -29,12 +29,18 @@ function validacionFormulario(){
 //Este metodo valida, prepara y envia la peticion al archivo "modelo.php" quien ejecutara el servicio.
 function enviardatos(){
 
+
   // Obtenemos los datos de la vista y los guardamos en una variable llamada "datos"
   let nombre=document.getElementById('form_nombre').value;
   let correo=document.getElementById('form_correo').value;
   let telefono=document.getElementById('form_telefono').value;
   let mensaje=document.getElementById('form_mensaje').value;
-  let datos="nombre="+nombre + "&correo="+correo + "&telefono="+telefono + "mensaje="+mensaje;
+  
+  let datos=
+  "nombre="+nombre+ 
+  "&correo="+correo+
+  "&telefono="+telefono+
+  "&mensaje="+mensaje;
 
 
 
@@ -59,7 +65,7 @@ if (this.validacionFormulario()) {
                    // Este se ejecutara si la petición se envio con exito: Una vez que todo haya salido bien, redireccionaremos al usuario a la url proporcionada
                   success: function(data){
                     let d1 = document.getElementById('btn_enviar');
-                    d1.insertAdjacentHTML('afterend', '<meta http-equiv="refresh" content="0; url= https://sandovalguicho.com/cotizar-sitio-web-gracias/" />');
+                    d1.insertAdjacentHTML('afterend', '<meta http-equiv="refresh" content="0; url= https://demo.sandovalguicho.com/html/pagina-agradecimiento-ejemplo.html" />');
                     document.getElementById("mensajeRespuesta").textContent="Mensaje enviado con Exito";
                     
                   },
