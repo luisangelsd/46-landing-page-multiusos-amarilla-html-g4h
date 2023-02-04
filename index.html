@@ -27,12 +27,12 @@
 
           <div id="contenedor2_seccion2">  
               <p>👉 ¡Call to action: Escribe algo increible y creativo aquí! </p>
-              <form id="form1" method="POST" >
+              <form id="form1" method="POST" action="modelo.php">
                 <input type="text" required autocomplete="cc-name"  id="form_nombre" name="form_nombre"  class="form_1"  placeholder="Nombre:">
                 <input type="email" required autocomplete="email" id="form_correo" name="form_correo" class="form_1" placeholder="Correo Electrónico">
                 <input type="tel" required autocomplete="tel" id="form_telefono" name="form_telefono" class="form_1" placeholder="Teléfono o WhatsApp">
                 <textarea  required  id="form_mensaje" name="form_mensaje" class="form_1" placeholder="Escribe aquí tu mensaje"></textarea>
-              <input type="button" id="btn_enviar" onclick="enviardatos()" value="¡ENVIAR Y CONTINUAR!">
+              <input type="submit" id="btn_enviar" value="¡ENVIAR Y CONTINUAR!">
               </form>
               <p id="respuestaMensaje"></p>
           </div>
@@ -289,9 +289,6 @@
         Esto es un texto de Sandoval Güicho y puedes sustituirlo con cualquier información de desees.</p><br>
       <a href="#contenedor2_problematica"><button id="boton_call_to_action_negro">👉 Da clic aquí para continuar </button></a>
     </div>
-
-    <script src="controlador.js" type="text/javascript"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
 </body>
 </html>
